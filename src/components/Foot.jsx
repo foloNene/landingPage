@@ -45,15 +45,50 @@ export default Foot;
 
 const FootContainer = styled.div``;
 
-const FootWrapper = styled.div``;
+const FootWrapper = styled.div`
+  display: flex;
+  bottom: 0;
+  @media screen and (max-width: 430px) {
+    display: flex;
+    flex-direction: column;
+    background-color: #d3d3d3;
+  }
+`;
 
-const FooterLeft = styled.p``;
+const FooterLeft = styled.p`
+  font-size: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+`;
 
-const FooterRight = styled.div``;
+const FooterRight = styled.div`
+  background-color: red;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
-const FooterI = styled.div``;
+const FooterI = styled.div`
+  font-weight: bolder;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+`;
 
-const FootIconWrap = styled.div``;
+const FootIconWrap = styled.div`
+  width: 50%;
+  font-weight: bolder;
+  display: flex;
+  justify-content: space-around;
+`;
 
-const FootIconHold = styled.div``;
-const FootArrow = styled.div``;
+const FootIconHold = styled.div`
+  font-weight: bolder;
+`;
+const FootArrow = styled.div`
+  font-size: 26px;
+`;
