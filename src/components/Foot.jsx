@@ -9,6 +9,12 @@ const Foot = () => {
   return (
     <>
       <FootContainer>
+        <br />
+        <br />
+        <FootUpArrow>
+          {" "}
+          <MdKeyboardArrowUp />
+        </FootUpArrow>
         <FootWrapper>
           <FooterLeft>© 2022 Arteri Africa</FooterLeft>
           <FooterRight>
@@ -43,15 +49,30 @@ const Foot = () => {
 
 export default Foot;
 
-const FootContainer = styled.div``;
+const FootContainer = styled.div`
+  background-color: #17365d;
+  color: white;
+  width: 100%;
+`;
+
+const FootUpArrow = styled.div`
+  display: none;
+  @media screen and (max-width: 780px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+  }
+`;
 
 const FootWrapper = styled.div`
   display: flex;
   bottom: 0;
-  @media screen and (max-width: 430px) {
+  @media screen and (max-width: 780px) {
+    width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
-    background-color: #d3d3d3;
   }
 `;
 
@@ -61,14 +82,24 @@ const FooterLeft = styled.p`
   display: flex;
   flex-direction: column;
   padding: 20px;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 const FooterRight = styled.div`
-  background-color: red;
+  // background-color: red;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+    justify-content: center;
+  }
 `;
 
 const FooterI = styled.div`
@@ -84,6 +115,7 @@ const FootIconWrap = styled.div`
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
+  gap: 20px;
 `;
 
 const FootIconHold = styled.div`
@@ -91,4 +123,7 @@ const FootIconHold = styled.div`
 `;
 const FootArrow = styled.div`
   font-size: 26px;
+  @media screen and (max-width: 780px) {
+    display: none;
+  }
 `;

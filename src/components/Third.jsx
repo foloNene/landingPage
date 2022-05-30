@@ -12,9 +12,6 @@ const Third = () => {
               <br />
               <br />
               <br />
-              <br />
-              <br />
-              <br />
               <Third1Para>
                 Providers Offer financing to your users at up to 24 months
                 repayment window. You get paid immediately by us, we collect the
@@ -32,8 +29,6 @@ const Third = () => {
             <Layer3Holder>
               <br />
               <br />
-              <br />
-              <br />
               <Layer3Upper>
                 Operational and Equipment
                 <br />
@@ -47,7 +42,16 @@ const Third = () => {
               </Layer3Lower>
             </Layer3Holder>
           </ThirdLayer3>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
         </ThirdWrapper>
+        <br />
+        <br />
+        <br />
       </ThirdContainer>
     </>
   );
@@ -56,10 +60,15 @@ const Third = () => {
 export default Third;
 
 const ThirdContainer = styled.div`
+  background-color: #17365d;
   width: 100%;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 780px) {
+    height: 100%;
+  }
 `;
 
 const ThirdWrapper = styled.div`
@@ -68,16 +77,32 @@ const ThirdWrapper = styled.div`
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 15px;
+  @media screen and (max-width: 780px) {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 `;
 
 const ThirdLayer1 = styled.div`
-  flex: 1;
+  width: 25%;
+  padding-left: 10px;
+  // flex: 1;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Layer1Holder = styled.div`
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 const ThirdParaButton = styled.button`
@@ -91,15 +116,20 @@ const ThirdParaButton = styled.button`
   font-size: 16px;
   border-radius: 20px;
 `;
-const Third1Para = styled.p``;
+const Third1Para = styled.p`
+  @media screen and (max-width: 780px) {
+    text-align: center;
+  }
+`;
 
 const ThirdLayer2 = styled.div`
   flex: 2;
 `;
 
 const ThirdImage = styled.img`
-  width: 500px;
-  height: 450px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 `;
 
 const Third2Wrapper = styled.div``;
@@ -107,9 +137,16 @@ const Third2Wrapper = styled.div``;
 const Layer3Holder = styled.div``;
 
 const ThirdLayer3 = styled.div`
-  flex: 1;
+  color: white;
+  width: 25%;
+  padding-left: 10px;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
 `;
-
 const Layer3Upper = styled.p``;
 
 const Layer3Lower = styled.p``;

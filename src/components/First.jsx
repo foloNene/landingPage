@@ -51,12 +51,12 @@ const First = () => {
             <Right1></Right1>
             <Right2>
               <RHeader>
-                <div>Home</div>
-                <div>About Us</div>
-                <div>Products</div>
-                <div>FAQs</div>
-                <div>Calculator</div>
-                <div>Login</div>
+                <RHeadli>Home</RHeadli>
+                <RHeadli>About Us</RHeadli>
+                <RHeadli>Products</RHeadli>
+                <RHeadli>FAQs</RHeadli>
+                <RHeadli>Calculator</RHeadli>
+                <RHeadli>Login</RHeadli>
               </RHeader>
             </Right2>
             <Right3>
@@ -99,6 +99,7 @@ const First = () => {
 export default First;
 
 const Container = styled.div`
+  background-color: #17365d;
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -108,7 +109,6 @@ const Container = styled.div`
 `;
 
 const LeftWrapper = styled.div`
-  background-color: green;
   flex: 1;
   width: 100%;
   height: 700px;
@@ -131,7 +131,6 @@ const LogoContainer = styled.div`
 `;
 
 const LogoWrapper = styled.div`
-  background-color: red;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -149,6 +148,7 @@ height: 70px;
 `;
 
 const NavBar = styled.div`
+  color: white;
   display: none;
   @media screen and (max-width: 780px) {
     display: flex;
@@ -157,8 +157,8 @@ const NavBar = styled.div`
     padding-right: 0;
     padding-left: 0;
     top: 70px;
-    height: 100vh;
-    width: 100%;
+    height: 80vh;
+    width: 70%;
     justify-content: flex-start;
     background: #101522;
     left: ${({ click }) => (click ? 0 : "-100%")};
@@ -174,25 +174,23 @@ const NavLinkHolder = styled.div`
   gap: 15px;
 `;
 
-const NavLinks = styled.div`
-  background-color: red;
-`;
+const NavLinks = styled.div``;
 
 const MobileIcon = styled.div`
   display: none;
 
   @media screen and (max-width: 850px) {
-    font-size: 20px;
-    background-color: green;
+    font-size: 25px;
+    background-color: #17365d;
     display: block;
     position: absolute;
-    top: 0;
+    top: 13px;
     right: 0;
     transform: translate(-100%, 60%);
   }
 `;
 const NavButHolder = styled.div`
-  background-color: green;
+  padding: 15px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -200,13 +198,18 @@ const NavButHolder = styled.div`
 `;
 
 const NavButton = styled.button`
-  width: 50%;
-  border-radius: 14px;
-  padding: 10px;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 20px;
 `;
 
 const RightContainer = styled.div`
-  background-color: blue;
   flex: 2;
   width: 100%;
   position: relative;
@@ -217,7 +220,6 @@ const RightWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
   flex-direction: column;
   @media screen and (max-width: 780px) {
     display: none;
@@ -229,7 +231,6 @@ const RightHeader = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  background-color: red;
   align-items: center;
 `;
 
@@ -245,15 +246,29 @@ const RHeader = styled.div`
   justify-content: space-around;
 `;
 
+const RHeadli = styled.div`
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  :hover {
+    color: #31ace7;
+    transition-duration: 0.4s;
+  }
+`;
+
 const Right3 = styled.div``;
 
 const Button = styled.button`
-  border-radius: 20px;
-  background-color: #dbdddf;
-  color: black;
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 13px 28px;
   text-align: center;
-  text-docoration: none;
-  padding: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 20px;
 `;
 
 const RightDown = styled.div`
@@ -274,7 +289,6 @@ const RightPara = styled.div`
   padding: 50px;
   width: 90%;
   height: 350px;
-  background-color: pink;
   @media screen and (max-width: 780px) {
     width: 100%;
     display: flex;
@@ -299,20 +313,38 @@ const ButtonDiv = styled.div`
   padding: 2px;
 `;
 const FirstButton = styled.button`
-  padding: 5px;
-  font-size: 14px;
+  background-color: #8bc34a;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   border-radius: 20px;
-  font-weight: 900;
-  @media screen and (max-width: 780px) {
-    font-size: 12px;
-    font-weight: 500;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  :hover {
+    background-color: #3097dd;
+    color: black;
   }
 `;
 
 const SecondButton = styled.button`
-  padding: 5px;
-  font-size: 14px;
+  background-color: #306ab2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   border-radius: 20px;
+  cursor: pointer;
+  :hover {
+    background-color: #8bc34a;
+    cursor: pointer;
+  }
   @media screen and (max-width: 780px) {
     font-size: 12px;
     font-weight: 500;
@@ -320,12 +352,27 @@ const SecondButton = styled.button`
 `;
 
 const ThirdButton = styled.button`
-  padding: 5px;
-  font-size: 14px;
+  background-color: white;
+  border: none;
+  color: #306ab2;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   border-radius: 20px;
+  cursor: pointer;
+  :hover {
+    background-color: #8bc34a;
+    cursor: pointer;
+  }
   @media screen and (max-width: 780px) {
     font-size: 12px;
     font-weight: 500;
+    :hover {
+      background-color: #8bc34a;
+      cursor: pointer;
+    }
   }
 `;
 
@@ -339,7 +386,7 @@ const FirstImageHolder = styled.div`
     left: 70px;
   }
   @media screen and (max-width: 500px) {
-    top: 200px;
+    top: 165px;
     left: 150px;
   }
 `;
@@ -351,6 +398,6 @@ const FirstImg = styled.img`
   }
   @media screen and (max-width: 500px) {
     width: 300px;
-    height: 300px;
+    height: 270px;
   }
 `;

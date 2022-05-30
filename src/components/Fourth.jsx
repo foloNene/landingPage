@@ -57,6 +57,12 @@ const Fourth = () => {
             </RightWrapper>
           </FourthRight>
         </FourthWarapper>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </FourthContainer>
     </>
   );
@@ -66,14 +72,27 @@ export default Fourth;
 
 const FourthContainer = styled.div`
   width: 100%;
+  background-color: #efefef;
 `;
 const FourthWarapper = styled.div`
   display: flex;
   justify-content: space-around;
   gap: 25px;
   flex-wrap: wrap;
+  @media screen and (max-width: 780px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 `;
-const FourthLeft = styled.div``;
+const FourthLeft = styled.div`
+  width: 50%;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items-center;
+  }
+`;
 
 const LeftFourthwrap = styled.div``;
 const FourthRight = styled.div``;
@@ -97,5 +116,17 @@ const FourthButton = styled.button`
   font-size: 16px;
   border-radius: 20px;
 `;
-const RightWrapper = styled.div``;
-const FourthImg = styled.img``;
+const RightWrapper = styled.div`
+  @media screen and (max-width: 780px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+`;
+const FourthImg = styled.img`
+  background-position: center;
+  background-size: cover;
+  @media screen and (max-width: 780px) {
+  }
+`;

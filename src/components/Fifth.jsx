@@ -30,8 +30,8 @@ const Fifth = () => {
           <Fifth4>
             <Fifth4Head>Links</Fifth4Head>
             <Fifth4div>
-              <li>Terms of use</li>
-              <li>Privacy Policy</li>
+              <Fifth4li>Terms of use</Fifth4li>
+              <Fifth4li>Privacy Policy</Fifth4li>
             </Fifth4div>
           </Fifth4>
         </FifthWrapper>
@@ -43,20 +43,34 @@ const Fifth = () => {
 export default Fifth;
 
 const FifthContainer = styled.div`
+  background-color: #17365d;
+  color: white;
   width: 100%;
+  border: none;
 `;
 const FifthWrapper = styled.div`
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
   @media screen and (max-width: 780px) {
     display: grid;
   }
 `;
 const Fifth1 = styled.div``;
 const Fifth2 = styled.div``;
-const Fifth3 = styled.div``;
-const Fifth4 = styled.div``;
+const Fifth3 = styled.div`
+  padding-bottom: 30px;
+  @media screen and (max-width: 780px) {
+    padding-bottom: 0;
+  }
+`;
+const Fifth4 = styled.div`
+  padding-bottom: 60px;
+  @media screen and (max-width: 780px) {
+    padding-bottom: 0;
+  }
+`;
 const FithImgHold = styled.div``;
 const FifthImage = styled.img`
   width: 200px;
@@ -71,4 +85,22 @@ const Fif3Head = styled.h3``;
 const Fit3Para = styled.p``;
 const Fifth4Head = styled.h3``;
 
-const Fifth4div = styled.div``;
+const Fifth4div = styled.ul`
+  background-color: transparent;
+  border: 1px #b2beb5;
+  border-radius: none;
+  box-shadow: 0px 0 5px -2px #888;
+`;
+
+const Fifth4li = styled.li`
+  color: #3385d7;
+  margin: 5px;
+  background-color: transparent;
+  border: 1px #b2beb5;
+  border-radius: none;
+  box-shadow: 0px 0 5px -2px #888;
+  :hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+`;

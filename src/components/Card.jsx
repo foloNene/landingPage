@@ -34,9 +34,13 @@ const CardContainer = styled.div`
   border: 1px #b2beb5;
   border-radius: 20px;
   box-shadow: 0px 0 5px -2px #888;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  cursor: pointer;
   :hover {
     cursor: pointer;
     background-color: #b5e1f7;
+    font-size: medium;
   }
 `;
 

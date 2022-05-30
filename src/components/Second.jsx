@@ -31,9 +31,15 @@ const SecondContainer = styled.div`
   align-items: center;
 `;
 
-const SecondHeader = styled.h2``;
+const SecondHeader = styled.h2`
+  font-size: 16px;
+  font-weight: normal;
+  color: #17365d;
+`;
 
-const SecondTitle = styled.h2``;
+const SecondTitle = styled.h2`
+  color: #17365d;
+`;
 
 const GetHolder = styled.div``;
 

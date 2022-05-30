@@ -5,6 +5,7 @@ import Second from "../components/Second";
 import Third from "../components/Third";
 import Fifth from "../components/Fifth";
 import Foot from "../components/Foot";
+import Fixed from "../components/Fixed";
 
 const Home = () => {
   return (
@@ -14,26 +15,10 @@ const Home = () => {
       <br />
       <br />
       <Third />
-      <br />
-      <br />
-      <br />
       <Fourth />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <Fifth />
-      <br />
-      <br />
-      <hr />
-      <br />
-      <br />
-      <br />
-      <br />
       <Foot />
+      <Fixed />
     </div>
   );
 };
