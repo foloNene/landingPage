@@ -131,7 +131,10 @@ const Container = styled.div`
 const LeftWrapper = styled.div`
   flex: 1;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  @media screen and (max-width: 780px) {
+    height: 80vh;
+  }
 `;
 
 const LeftContainer = styled.div`
@@ -180,7 +183,7 @@ const NavBar = styled.div`
     height: 100vh;
     width: 70%;
     justify-content: flex-start;
-    background: #101522;
+    background: #17365d;
     left: ${({ click }) => (click ? 0 : "-100%")};
     opacity: 1;
     transition: all 0.5s ease;
@@ -317,6 +320,11 @@ const RightPara = styled.div`
   padding: 50px;
   width: 90%;
   // height: 350px;
+  @media screen and (max-width: 1024px) {
+    z-index: 12;
+    padding: 50px;
+    width: 90%;
+  }
   @media screen and (max-width: 780px) {
     width: 100%;
     // height: 100%;
@@ -333,7 +341,16 @@ const RightParaHead = styled.h1`
   width: 100%;
   color: white;
   // font-weight: 900;
-  font-size: 40px;
+  font-size: 55px;
+
+  @media screen and (max-width: 1024px) {
+    z-index: 12;
+    width: 100%;
+    color: white;
+    // font-weight: 900;
+    font-size: 40px;
+  }
+
   @media screen and (max-width: 780px) {
     font-size: 25px;
     text-align: center;
@@ -366,13 +383,31 @@ const FirstButton = styled.button`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 26px;
   border-radius: 20px;
   cursor: pointer;
   transition-duration: 0.4s;
   :hover {
     background-color: #3097dd;
     color: black;
+  }
+    @media screen and (max-width: 1024px) {
+     background-color: #8bc34a;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  }
+     :hover {
+     background-color: #3097dd;
+    color: black;
+    }
   }
   @media screen and (max-width: 780px) {
     font-size: 12px;
@@ -397,10 +432,27 @@ const SecondButton = styled.button`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 25px;
   border-radius: 20px;
   cursor: pointer;
   :hover {
+    background-color: #8bc34a;
+    color: black;
+    cursor: pointer;
+  }
+    @media screen and (max-width: 1024px) {
+    background-color: #306ab2;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  }
+    :hover {
     background-color: #8bc34a;
     color: black;
     cursor: pointer;
@@ -427,12 +479,28 @@ const ThirdButton = styled.button`
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 26px;
   border-radius: 20px;
   cursor: pointer;
   :hover {
     background-color: #8bc34a;
     cursor: pointer;
+  }
+  @media screen and (max-width: 1024px) {
+    background-color: white;
+    border: none;
+    color: #306ab2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    :hover {
+      background-color: #8bc34a;
+      cursor: pointer;
+    }
   }
   @media screen and (max-width: 780px) {
     font-size: 12px;
@@ -448,16 +516,26 @@ const ThirdButton = styled.button`
 
 const FirstImageHolder = styled.div`
   position: absolute;
-  top: 40px;
-  left: -70px;
+  top: 10px;
+  left: 160px;
   z-index: 1;
+
+  @media screen and (max-width: 1024px) {
+    top: 10px;
+    left: -40px;
+    z-index: 1;
+  }
   @media screen and (max-width: 780px) {
     top: 150px;
     left: 70px;
   }
   @media screen and (max-width: 500px) {
     top: 14px;
-    left: 45px;
+    left: -10px;
+  }
+  @media screen and (max-width: 380px) {
+    top: 14px;
+    left: -50px;
   }
 `;
 

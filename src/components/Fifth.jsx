@@ -61,7 +61,7 @@ const FifthWrapper = styled.div`
   @media screen and (max-width: 780px) {
     display: grid;
     // padding-left: 0;
-    width: 90%;
+    width: 80%;
   }
 `;
 const Fifth1 = styled.div``;
