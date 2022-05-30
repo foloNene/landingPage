@@ -60,13 +60,13 @@ const FifthWrapper = styled.div`
 const Fifth1 = styled.div``;
 const Fifth2 = styled.div``;
 const Fifth3 = styled.div`
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   @media screen and (max-width: 780px) {
     padding-bottom: 0;
   }
 `;
 const Fifth4 = styled.div`
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   @media screen and (max-width: 780px) {
     padding-bottom: 0;
   }

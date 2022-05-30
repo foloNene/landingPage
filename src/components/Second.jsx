@@ -7,6 +7,9 @@ const Second = () => {
   return (
     <>
       <SecondContainer>
+        <br />
+        <br />
+        <br />
         <SecondHeader>FEATURES</SecondHeader>
         <SecondTitle>Individuals & Households</SecondTitle>
         <br />

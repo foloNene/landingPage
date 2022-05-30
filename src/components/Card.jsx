@@ -12,8 +12,9 @@ const Card = ({ icon, discription, Title }) => {
           <Text>
             <p>{Title}</p>
           </Text>
-          <Description></Description>
-          <p>{discription}</p>
+          <Description>
+            <p>{discription}</p>
+          </Description>
         </CardWrap>
       </CardContainer>
     </>
@@ -32,7 +33,7 @@ const CardContainer = styled.div`
   height: 200px;
   background-color: white;
   border: 1px #b2beb5;
-  border-radius: 20px;
+  border-radius: 30px;
   box-shadow: 0px 0 5px -2px #888;
   box-shadow: var(--light-shadow);
   transition: var(--transition);
@@ -41,10 +42,12 @@ const CardContainer = styled.div`
     cursor: pointer;
     background-color: #b5e1f7;
     font-size: medium;
+    border-radius: 30px;
   }
 `;
 
 const CardWrap = styled.div`
+  padding-top: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -59,7 +62,9 @@ const Icon = styled.img`
   width: 55px;
   height: 55px;
 `;
-const Description = styled.div``;
+const Description = styled.div`
+  font-size: 12px;
+`;
 
 const Text = styled.div`
   display: flex;

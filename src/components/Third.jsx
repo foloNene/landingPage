@@ -12,10 +12,13 @@ const Third = () => {
               <br />
               <br />
               <br />
+              <br />
+              <br />
+              <br />
               <Third1Para>
-                Providers Offer financing to your users at up to 24 months
-                repayment window. You get paid immediately by us, we collect the
-                payment from your customers over time.
+                Offer financing to your users at up to 24 months repayment
+                window. You get paid immediately by us, we collect the payment
+                from your customers over time.
               </Third1Para>
               <ThirdParaButton>Get OnBoarded</ThirdParaButton>
             </Layer1Holder>
@@ -30,14 +33,14 @@ const Third = () => {
               <br />
               <br />
               <Layer3Upper>
-                Operational and Equipment
-                <br />
+                <Layer3Header>Operational and Equipment</Layer3Header>
                 Financing At comfortable interest rates and repayment length
               </Layer3Upper>
+              <br />
               <hr />
+              <br />
               <Layer3Lower>
-                Plug Revenue Leakages, Grow Faster
-                <br />
+                <Layer3Header>Plug Revenue Leakages, Grow Faster</Layer3Header>
                 We will be your reliable growth partner
               </Layer3Lower>
             </Layer3Holder>
@@ -66,6 +69,7 @@ const ThirdContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
   @media screen and (max-width: 780px) {
     height: 100%;
   }
@@ -87,10 +91,11 @@ const ThirdWrapper = styled.div`
 
 const ThirdLayer1 = styled.div`
   width: 25%;
-  padding-left: 10px;
+  padding-left: 20px;
+  font-size: 14px;
   // flex: 1;
   @media screen and (max-width: 780px) {
-    width: 100%;
+    width: 90%;
     display: grid;
     align-items: center;
     justify-content: center;
@@ -103,6 +108,7 @@ const Layer1Holder = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 `;
 
 const ThirdParaButton = styled.button`
@@ -140,6 +146,7 @@ const ThirdLayer3 = styled.div`
   color: white;
   width: 25%;
   padding-left: 10px;
+  text-align: center;
   @media screen and (max-width: 780px) {
     width: 100%;
     display: grid;
@@ -147,6 +154,14 @@ const ThirdLayer3 = styled.div`
     justify-content: center;
   }
 `;
-const Layer3Upper = styled.p``;
+const Layer3Upper = styled.p`
+  font-size: 14px;
+`;
 
-const Layer3Lower = styled.p``;
+const Layer3Lower = styled.p`
+  font-size: 14px;
+`;
+
+const Layer3Header = styled.h4`
+  font-size: 14px;
+`;

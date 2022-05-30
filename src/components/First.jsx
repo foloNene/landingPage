@@ -5,6 +5,9 @@ import logo from "../Assests/logo.png";
 import curve from "../Assests/curve.png";
 import { FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { BsWhatsapp } from "react-icons/bs";
+import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const First = () => {
   const [click, setClick] = useState(false);
@@ -35,6 +38,24 @@ const First = () => {
                     <NavLinks>Products</NavLinks>
                     <NavLinks>Login</NavLinks>
                   </NavLinkHolder>
+
+                  <FootIconWrap>
+                    <FootIconHold>
+                      <BsWhatsapp />
+                    </FootIconHold>
+                    <FootIconHold>
+                      <FiFacebook />
+                    </FootIconHold>
+                    <FootIconHold>
+                      <FiTwitter />
+                    </FootIconHold>
+                    <FootIconHold>
+                      <AiFillLinkedin />
+                    </FootIconHold>
+                    <FootIconHold>
+                      <FiInstagram />
+                    </FootIconHold>
+                  </FootIconWrap>
                 </NavBar>
               </LogoHold>
             </LogoWrapper>
@@ -64,8 +85,7 @@ const First = () => {
             </Right3>
           </RightHeader>
         </RightWrapper>
-        <br />
-        <br />
+
         <RightDown>
           <RightPara>
             <RightParaHead>
@@ -157,7 +177,7 @@ const NavBar = styled.div`
     padding-right: 0;
     padding-left: 0;
     top: 70px;
-    height: 80vh;
+    height: 100vh;
     width: 70%;
     justify-content: flex-start;
     background: #101522;
@@ -168,6 +188,7 @@ const NavBar = styled.div`
   }
 `;
 const NavLinkHolder = styled.div`
+  padding-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -213,6 +234,9 @@ const RightContainer = styled.div`
   flex: 2;
   width: 100%;
   position: relative;
+  @media screen and (max-width: 780px) {
+    width: 100%;
+  }
 `;
 
 const RightWrapper = styled.div`
@@ -272,6 +296,7 @@ const Button = styled.button`
 `;
 
 const RightDown = styled.div`
+  z-index: 12;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -294,10 +319,12 @@ const RightPara = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 0;
   }
 `;
 
 const RightParaHead = styled.h1`
+  z-index: 12;
   width: 100%;
   color: white;
   font-weight: 900;
@@ -307,7 +334,9 @@ const RightParaHead = styled.h1`
   }
 `;
 
-const LowerButtonHolder = styled.div``;
+const LowerButtonHolder = styled.div`
+  z-index: 12;
+`;
 
 const ButtonDiv = styled.div`
   padding: 2px;
@@ -386,8 +415,8 @@ const FirstImageHolder = styled.div`
     left: 70px;
   }
   @media screen and (max-width: 500px) {
-    top: 165px;
-    left: 150px;
+    top: 10px;
+    left: -130px;
   }
 `;
 
@@ -397,7 +426,20 @@ const FirstImg = styled.img`
     height: 500px;
   }
   @media screen and (max-width: 500px) {
-    width: 300px;
-    height: 270px;
+    width: 500px;
+    height: 250px;
   }
+`;
+
+const FootIconWrap = styled.div`
+  padding-left: 50px;
+  width: 50%;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+`;
+
+const FootIconHold = styled.div`
+  font-weight: bolder;
 `;

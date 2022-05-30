@@ -10,6 +10,8 @@ const Fourth = () => {
         <br />
         <br />
         <br />
+        <br />
+        <br />
         <FourthWarapper>
           <br />
           <FourthLeft>
@@ -20,8 +22,8 @@ const Fourth = () => {
                 <NumberWrappper>
                   <p>
                     {" "}
-                    <GrFormCheckmark />
-                    Health Plans like Insurance, at Zero Upfront Cost
+                    <GrFormCheckmark /> Health Plans like Insurance, at Zero
+                    Upfront Cost
                   </p>
                   <p>
                     <GrFormCheckmark />
@@ -96,10 +98,22 @@ const FourthLeft = styled.div`
 
 const LeftFourthwrap = styled.div``;
 const FourthRight = styled.div``;
-const FourthTitle = styled.p``;
-const FourthHeading = styled.h4``;
+const FourthTitle = styled.h4`
+  padding-left: 15px;
+  font-size: 14px;
+`;
+const FourthHeading = styled.h4`
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #1f2e88;
+`;
 const FouthNumber = styled.div``;
-const NumberWrappper = styled.ul``;
+const NumberWrappper = styled.ul`
+  font-size: 12px;
+  font-weight: bold;
+  // word-spacing: 2px;
+`;
 const FourthButHolder = styled.div`
   width: 60%;
   display: flex;
