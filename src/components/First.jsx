@@ -131,7 +131,7 @@ const Container = styled.div`
 const LeftWrapper = styled.div`
   flex: 1;
   width: 100%;
-  height: 700px;
+  height: 100vh;
 `;
 
 const LeftContainer = styled.div`
@@ -203,6 +203,7 @@ const MobileIcon = styled.div`
   @media screen and (max-width: 850px) {
     font-size: 25px;
     background-color: #17365d;
+    color: white;
     display: block;
     position: absolute;
     top: 13px;
@@ -312,14 +313,16 @@ const RightDown = styled.div`
 
 const RightPara = styled.div`
   padding: 50px;
-  width: 90%;
+  width: 100%;
   height: 350px;
   @media screen and (max-width: 780px) {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0;
+    padding: 0x;
+    text-align: center;
   }
 `;
 
@@ -330,16 +333,21 @@ const RightParaHead = styled.h1`
   font-weight: 900;
   font-size: 45px;
   @media screen and (max-width: 780px) {
-    font-size: 30px;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
   }
 `;
 
 const LowerButtonHolder = styled.div`
   z-index: 12;
+  @media screen and (max-width: 780px) {
+    text-align: center;
+  }
 `;
 
 const ButtonDiv = styled.div`
-  padding: 2px;
+  padding: 4px;
 `;
 const FirstButton = styled.button`
   background-color: #8bc34a;
@@ -357,6 +365,19 @@ const FirstButton = styled.button`
     background-color: #3097dd;
     color: black;
   }
+  @media screen and (max-width: 780px) {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 12px;
+    background-color: #8BC34A;
+   color: black;
+  }
+     :hover {
+      background-color: #307ECC;
+      color: white;
+      cursor: pointer;
+    }
+  }
 `;
 
 const SecondButton = styled.button`
@@ -372,11 +393,20 @@ const SecondButton = styled.button`
   cursor: pointer;
   :hover {
     background-color: #8bc34a;
+    color: black;
     cursor: pointer;
   }
   @media screen and (max-width: 780px) {
     font-size: 12px;
     font-weight: 500;
+    padding: 8px 12px;
+    background-color: #3385D7;
+    color: white;
+  }
+     :hover {
+      background-color: #8bc34a;
+      cursor: pointer;
+    }
   }
 `;
 
@@ -398,6 +428,8 @@ const ThirdButton = styled.button`
   @media screen and (max-width: 780px) {
     font-size: 12px;
     font-weight: 500;
+    padding: 8px 12px;
+    background-color: white;
     :hover {
       background-color: #8bc34a;
       cursor: pointer;
@@ -415,8 +447,8 @@ const FirstImageHolder = styled.div`
     left: 70px;
   }
   @media screen and (max-width: 500px) {
-    top: 10px;
-    left: -130px;
+    top: 50px;
+    left: 2px;
   }
 `;
 
