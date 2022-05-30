@@ -47,6 +47,9 @@ const Fourth = () => {
                     AI Recommendation Engine
                   </p>
                 </NumberWrappper>
+                <br />
+                <br />
+                <br />
                 <FourthButHolder>
                   <FourthButton>Get Kova</FourthButton>
                 </FourthButHolder>

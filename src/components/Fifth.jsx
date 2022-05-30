@@ -43,10 +43,15 @@ const Fifth = () => {
 export default Fifth;
 
 const FifthContainer = styled.div`
+  font-size: 12px;
   background-color: #17365d;
   color: white;
   width: 100%;
   border: none;
+  @media screen and (max-width: 780px) {
+    padding: 0;
+    margin: 0;
+  }
 `;
 const FifthWrapper = styled.div`
   display: flex;
@@ -55,6 +60,8 @@ const FifthWrapper = styled.div`
   align-items: center;
   @media screen and (max-width: 780px) {
     display: grid;
+    // padding-left: 0;
+    width: 90%;
   }
 `;
 const Fifth1 = styled.div``;
@@ -66,9 +73,10 @@ const Fifth3 = styled.div`
   }
 `;
 const Fifth4 = styled.div`
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   @media screen and (max-width: 780px) {
     padding-bottom: 0;
+    padding-top: 10px;
   }
 `;
 const FithImgHold = styled.div``;
@@ -94,6 +102,7 @@ const Fifth4div = styled.ul`
 
 const Fifth4li = styled.li`
   color: #3385d7;
+  padding-top: 10px;
   margin: 5px;
   background-color: transparent;
   border: 1px #b2beb5;

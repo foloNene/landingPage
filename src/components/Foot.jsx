@@ -58,6 +58,7 @@ const FootContainer = styled.div`
 const FootUpArrow = styled.div`
   display: none;
   @media screen and (max-width: 780px) {
+    color: gray;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,11 +78,11 @@ const FootWrapper = styled.div`
 `;
 
 const FooterLeft = styled.p`
-  font-size: 20px;
+  font-size: 14px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+
   @media screen and (max-width: 780px) {
     width: 100%;
     display: grid;
@@ -104,24 +105,28 @@ const FooterRight = styled.div`
 
 const FooterI = styled.div`
   font-weight: bolder;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   justify-content: space-around;
   width: 70%;
+  padding-bottom: 10px;
 `;
 
 const FootIconWrap = styled.div`
+  font-size: 14px;
+  color: blue;
   width: 50%;
   font-weight: bolder;
   display: flex;
   justify-content: space-around;
-  gap: 20px;
+  gap: 15px;
 `;
 
 const FootIconHold = styled.div`
   font-weight: bolder;
 `;
 const FootArrow = styled.div`
+  color: gray;
   font-size: 26px;
   @media screen and (max-width: 780px) {
     display: none;

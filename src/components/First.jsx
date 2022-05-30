@@ -131,7 +131,7 @@ const Container = styled.div`
 const LeftWrapper = styled.div`
   flex: 1;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
 `;
 
 const LeftContainer = styled.div`
@@ -237,6 +237,7 @@ const RightContainer = styled.div`
   position: relative;
   @media screen and (max-width: 780px) {
     width: 100%;
+    height: 100%;
   }
 `;
 
@@ -312,12 +313,13 @@ const RightDown = styled.div`
 `;
 
 const RightPara = styled.div`
+  z-index: 12;
   padding: 50px;
-  width: 100%;
-  height: 350px;
+  width: 90%;
+  // height: 350px;
   @media screen and (max-width: 780px) {
     width: 100%;
-    height: 100%;
+    // height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -330,12 +332,14 @@ const RightParaHead = styled.h1`
   z-index: 12;
   width: 100%;
   color: white;
-  font-weight: 900;
-  font-size: 45px;
+  // font-weight: 900;
+  font-size: 40px;
   @media screen and (max-width: 780px) {
-    font-size: 28px;
+    font-size: 25px;
     text-align: center;
-    font-weight: 500;
+    // font-weight: 500;
+    padding: 0;
+    margin: 0;
   }
 `;
 
@@ -343,11 +347,16 @@ const LowerButtonHolder = styled.div`
   z-index: 12;
   @media screen and (max-width: 780px) {
     text-align: center;
+    padding: 0;
+    margin: 0;
   }
 `;
 
 const ButtonDiv = styled.div`
   padding: 4px;
+  @media screen and (max-width: 780px) {
+    text-align: center;
+  }
 `;
 const FirstButton = styled.button`
   background-color: #8bc34a;
@@ -447,8 +456,8 @@ const FirstImageHolder = styled.div`
     left: 70px;
   }
   @media screen and (max-width: 500px) {
-    top: 50px;
-    left: 2px;
+    top: 14px;
+    left: 45px;
   }
 `;
 
@@ -458,7 +467,7 @@ const FirstImg = styled.img`
     height: 500px;
   }
   @media screen and (max-width: 500px) {
-    width: 500px;
+    width: 400px;
     height: 250px;
   }
 `;

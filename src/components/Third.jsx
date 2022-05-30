@@ -20,7 +20,10 @@ const Third = () => {
                 window. You get paid immediately by us, we collect the payment
                 from your customers over time.
               </Third1Para>
-              <ThirdParaButton>Get OnBoarded</ThirdParaButton>
+              <br />
+              <ThirdParaButton>GET ONBOARDED</ThirdParaButton>
+              <br />
+              <br />
             </Layer1Holder>
           </ThirdLayer1>
           <ThirdLayer2>
@@ -109,6 +112,7 @@ const Layer1Holder = styled.div`
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  font-size: 12px;
 `;
 
 const ThirdParaButton = styled.button`
@@ -150,18 +154,17 @@ const ThirdLayer3 = styled.div`
   @media screen and (max-width: 780px) {
     width: 100%;
     display: grid;
-    align-items: center;
     justify-content: center;
   }
 `;
 const Layer3Upper = styled.p`
-  font-size: 14px;
+  font-size: 12px;
 `;
 
 const Layer3Lower = styled.p`
-  font-size: 14px;
+  font-size: 12px;
 `;
 
 const Layer3Header = styled.h4`
-  font-size: 14px;
+  font-size: 12px;
 `;
